@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Popular Movies</h3>    
+    </div> 
+    <div class="panel-body">
+        <div *ngIf="blogs">
+            <div *ngFor="let blog of blogs.items; let i = index" class="row">
+                <div class="col-md-8">
+                    <div>
+                        <a routerLink="/blog/{{blog.sys.id}}"><h4>{{blog.fields.title}}</h4></a>
+                        <a routerLink="/blog/{{blog.sys.id}}"><img *ngIf="assets" src="{{assets[i].fields.file.url}}"></a>
+                    </div>                                
+                </div>    
+            </div>
+        </div>   
+    </div>   
+</div>
