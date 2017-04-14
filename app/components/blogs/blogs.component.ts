@@ -1,6 +1,6 @@
 import { Component, Pipe, PipeTransform } from '@angular/core';
 import {contentfulService} from '../../services/contentful.service';
-
+import { Location } from "@angular/common";
 import { DomSanitizer} from '@angular/platform-browser';
 
 @Component({

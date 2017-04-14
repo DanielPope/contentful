@@ -4,6 +4,7 @@ import {HttpModule, JsonpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
 import {routing} from './app.routing';
 import { Routes, RouterModule } from '@angular/router';
+// import { Routes,RouterModule, LocationStrategy, HashLocationStrategy } from '@angular/router';
 import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
 
 import { AppComponent }  from './app.component';
@@ -21,7 +22,7 @@ const routes: Routes = [
   			 JsonpModule, 
   			 FormsModule, 
   			 routing,
-  			 RouterModule.forRoot(routes, { useHash: true }) ],
+  			 RouterModule.forRoot(routes, { useHash: true })],
   declarations: [ 
   				AppComponent, 
   				BlogsComponent, 

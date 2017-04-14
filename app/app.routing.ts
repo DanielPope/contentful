@@ -5,15 +5,10 @@ import {BlogsComponent} from './components/blogs/blogs.component';
 import {BlogComponent} from './components/blog/blog.component';
 
 const appRoutes: Routes = [
-	{
-		path: '', 
-		pathMatch: 'full', 
-		redirectTo: 'home'
-	}, 	 	
     {
-        path:'home',
+        path:'',
         component: BlogsComponent
-    },   
+    },	 	   
     {
         path:'blog/:id',
         component: BlogComponent
