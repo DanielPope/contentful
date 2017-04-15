@@ -5,11 +5,14 @@ import {FormsModule} from '@angular/forms';
 import {routes} from './app.routing';
 import { Routes, RouterModule } from '@angular/router';
 import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
+import { ImageMatchPipe } from './pipes/match-id.pipe';
 
 import { AppComponent }  from './app.component';
 
 import {BlogsComponent} from './components/blogs/blogs.component';
 import {BlogComponent} from './components/blog/blog.component'
+import {ShopComponent} from './components/shop/shop.component';
+import {ProductComponent} from './components/product/product.component';
 
 @NgModule({
   imports: [ 
@@ -23,6 +26,9 @@ import {BlogComponent} from './components/blog/blog.component'
 	  AppComponent, 
 	  BlogsComponent, 
 	  BlogComponent,
+	  ShopComponent,
+	  ProductComponent,
+	  ImageMatchPipe,
       EscapeHtmlPipe
   ],
   bootstrap: [ AppComponent ]
