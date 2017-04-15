@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Popular Movies</h3>    
+    </div> 
+    <div class="panel-body">
+        <div *ngIf="products">
+            <div *ngFor="let product of products.items;" class="row">
+                <div class="col-md-8">
+                    <div>
+                        <a routerLink="/shop/{{product.sys.id}}"><h4>{{product.fields.title}}</h4></a>
+                        <div *ngIf="assets">
+                            <div *ngFor="let asset of assets| matchImage:product.fields.image.sys.id">
+                                <a routerLink="/shop/{{product.sys.id}}"><img src="{{asset.fields.file.url}}"></a>
+                            </div>                       
+                        </div>
+                    </div>                                
+                </div>    
+            </div>
+        </div>   
+    </div>   
+</div>

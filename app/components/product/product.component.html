@@ -1,0 +1,19 @@
+<div *ngIf="product">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{product.title}}</h3>   
+        </div> 
+        <div class="panel-body">
+            <div class="row">
+                <p>{{product.caption}}<span>#{{product.product_id}}</span></p>
+                <p>${{product.price}}</p>
+                <img *ngIf="assets" src="{{assets[0].fields.file.url}}"> 
+                <img *ngIf="assets" src="{{assets[1].fields.file.url}}">
+<a href="#" attr.data-item-id="{{product.product_id}}" attr.data-item-name="{{product.title}}" attr.data-item-price="{{product.price}}" data-item-url="http://localhost:3000/" attr.data-item-description="{{product.caption}}" attr.data-item-custom-options="{{product.size}}" attr.data-item-custom-name="{{product.custom}}" class="snipcart-add-item btn btn-primary">Add To Cart</a>                   
+            </div>
+        </div> 
+    </div>    
+</div>
+
+
+ product
