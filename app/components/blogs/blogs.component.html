@@ -7,8 +7,8 @@
             <div *ngFor="let blog of blogs.items; let i = index" class="row">
                 <div class="col-md-8">
                     <div>
-                        <a routerLink="/blog/{{blog.sys.id}}"><h4>{{blog.fields.title}}</h4></a>
-                        <a routerLink="/blog/{{blog.sys.id}}"><img *ngIf="assets" src="{{assets[i].fields.file.url}}"></a>
+                        <a routerLink="/posts/{{blog.sys.id}}"><h4>{{blog.fields.title}}</h4></a>
+                        <a routerLink="/posts/{{blog.sys.id}}"><img *ngIf="assets" src="{{assets[i].fields.file.url}}"></a>
                     </div>                                
                 </div>    
             </div>

@@ -4,8 +4,8 @@ import {Routes, RouterModule} from '@angular/router';
 import {BlogsComponent} from './components/blogs/blogs.component';
 import {BlogComponent} from './components/blog/blog.component';
 
-const appRoutes: Routes = [
-    {
+export const routes: Routes = [
+  {
       path: '',
       redirectTo: '/posts',
       pathMatch: 'full'
@@ -15,11 +15,7 @@ const appRoutes: Routes = [
         component: BlogsComponent
     },	 	   
     {
-        path:'blog/:id',
+        path:'posts/:id',
         component: BlogComponent
     }
 ];
-
-export const appRoutingProviders: any[] = [];
-
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
