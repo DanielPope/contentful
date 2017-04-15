@@ -17,7 +17,7 @@ export class ShopComponent {
         private _contentfulService: contentfulService,
         private _sanitizer: DomSanitizer){
         this._contentfulService.getProducts().subscribe(res => {                
-            this.products = res ;       
+            this.products = res.items ;       
             this.assets = res.includes.Asset ;
         });    
     }

@@ -17,9 +17,8 @@ export class BlogsComponent {
         private _contentfulService: contentfulService,
         private _sanitizer: DomSanitizer){
         this._contentfulService.getBlogs().subscribe(res => {                
-            this.blogs = res ;
+            this.blogs = res.items ;
             this.assets = res.includes.Asset ;
-            console.log(this.blogs);
         });    
     }
     

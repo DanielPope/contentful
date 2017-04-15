@@ -10,7 +10,7 @@ import {ProductComponent} from './components/product/product.component';
 export const routes: Routes = [
   {
       path: '',
-      redirectTo: '/blogs',
+      redirectTo: 'blogs',
       pathMatch: 'full'
     },
     {
@@ -18,7 +18,7 @@ export const routes: Routes = [
         component: BlogsComponent
     },	 	   
     {
-        path:'blogs/:id',
+        path:'blogs/post/:id',
         component: BlogComponent
     },
     {
@@ -26,7 +26,7 @@ export const routes: Routes = [
         component: ShopComponent
     },
     {
-        path:'shop/:id',
+        path:'shop/product/:id',
         component: ProductComponent
     }        
 ];

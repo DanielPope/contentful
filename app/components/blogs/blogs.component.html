@@ -4,13 +4,13 @@
     </div> 
     <div class="panel-body">
         <div *ngIf="blogs">
-            <div *ngFor="let blog of blogs.items;" class="row">
+            <div *ngFor="let blog of blogs" class="row">
                 <div class="col-md-8">
                     <div>
-                        <a routerLink="/blogs/{{blog.sys.id}}"><h4>{{blog.fields.title}}</h4></a>
+                        <a routerLink="/blogs/post/{{blog.sys.id}}"><h4>{{blog.fields.title}}</h4></a>
                         <div *ngIf="assets">
                             <div *ngFor="let asset of assets | matchImage:blog.fields.image[0].sys.id">
-                               <a routerLink="/blogs/{{blog.sys.id}}"><img src="{{asset.fields.file.url}}"></a>
+                               <a routerLink="/blogs/post/{{blog.sys.id}}"><img src="{{asset.fields.file.url}}"></a>
                             </div>                       
                         </div>                        
                     </div>                                
