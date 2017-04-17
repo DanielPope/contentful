@@ -9,6 +9,7 @@ import {BlogsComponent} from './components/blogs/blogs.component';
 import {BlogComponent} from './components/blog/blog.component';
 import {ShopComponent} from './components/shop/shop.component';
 import {ProductComponent} from './components/product/product.component';
+import {ShowsComponent} from './components/shows/shows.component';
 
 export const routes: Routes = [
     {
@@ -27,6 +28,10 @@ export const routes: Routes = [
         path:'shop',
         component: ShopComponent
     },
+    {
+        path:'shows',
+        component: ShowsComponent
+    },    
     {
         path:'shop/product/:id',
         component: ProductComponent

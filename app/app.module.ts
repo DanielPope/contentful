@@ -15,6 +15,7 @@ import {BlogsComponent} from './components/blogs/blogs.component';
 import {BlogComponent} from './components/blog/blog.component'
 import {ShopComponent} from './components/shop/shop.component';
 import {ProductComponent} from './components/product/product.component';
+import {ShowsComponent} from './components/shows/shows.component';
 
 @NgModule({
   imports: [ 
@@ -31,6 +32,7 @@ import {ProductComponent} from './components/product/product.component';
 	  BlogComponent,
 	  ShopComponent,
 	  ProductComponent,
+	  ShowsComponent,
 	  NavbarComponent,
 	  ImageMatchPipe,
       EscapeHtmlPipe
