@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
 import {contentfulService} from '../../services/contentful.service';
+import {NavbarComponent} from './components/navbar/navbar.component';
+
 
 @Component({
     moduleId: module.id,
@@ -10,6 +12,8 @@ import {contentfulService} from '../../services/contentful.service';
 export class ProductComponent implements OnInit{
     product: Object;
     assets:Array<Object>;
+    isActive: bool = true;
+    notActive: bool = false;
     
     constructor(
         private router:ActivatedRoute, 
@@ -22,10 +26,21 @@ export class ProductComponent implements OnInit{
             let entry = params['id'];
             this._contentfulService.getProduct(entry).subscribe(product => {
                 this.product = product.fields;
+                console.log(this.product);
             });  
             this._contentfulService.getProductThumbnails(entry).subscribe(res=> {
                 this.assets = res.includes.Asset 
-            });                     
+            });                    
         });
+    }
+
+    toggle1() {
+        this.isActive = true;
+        this.notActive = false;
+    }
+
+    toggle2() {
+        this.isActive = false;
+        this.notActive = true;
     }
 }

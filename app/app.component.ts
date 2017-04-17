@@ -5,6 +5,6 @@ import {contentfulService} from './services/contentful.service';
     moduleId: module.id,
     selector: 'my-app',
     templateUrl: 'app.component.html',
-    providers: [contentfulService]
+    providers: [contentfulService]   
 })
 export class AppComponent { }

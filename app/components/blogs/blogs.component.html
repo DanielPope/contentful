@@ -9,7 +9,7 @@
                     <div>
                         <a routerLink="/blogs/post/{{blog.sys.id}}"><h4>{{blog.fields.title}}</h4></a>
                         <div *ngIf="assets">
-                            <div *ngFor="let asset of assets | matchImage:blog.fields.image[0].sys.id">
+                            <div *ngFor="let asset of assets | matchImage:blog.fields.image.sys.id">
                                <a routerLink="/blogs/post/{{blog.sys.id}}"><img src="{{asset.fields.file.url}}"></a>
                             </div>                       
                         </div>                        

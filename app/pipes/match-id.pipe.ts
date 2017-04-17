@@ -8,7 +8,7 @@ export class ImageMatchPipe implements PipeTransform {
   	
   	if(imageId === undefined) return false;
 
-  	return assets.filter(function(asset) {  		
+  	return assets.filter(function(asset: any) {  		
   		return asset.sys.id === imageId;
   	})
   }

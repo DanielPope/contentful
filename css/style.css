@@ -1,0 +1,388 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a:focus, a:visited, a:hover {
+	text-decoration: none;
+}
+
+/* BACKGROUNDS */
+.bg-page {
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://static1.squarespace.com/static/57217a884d088ea322c1caa9/t/58501e53725e254d6b0c42a2/1481645657490/DSCF9076-2.png") no-repeat center center scroll;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    min-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    background-position: right 0;
+}
+
+.bg-home {
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://static1.squarespace.com/static/57217a884d088ea322c1caa9/t/57277f4f2b8dde53fd13d0aa/1462206288661/IMG_2687+2.jpg") no-repeat center center scroll;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: absolute;
+  min-width: 100%;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1;
+  background-position: right 0;
+}
+
+/* Nav*/
+
+.navbar {
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.navbar-default .navbar-nav {
+	margin: 0px !important;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-default .navbar-nav > li {
+  float: none;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;	
+  font-weight: 300;
+  letter-spacing: 1px;  
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  float: none;
+  display: inline-block;
+  color: #fff;
+}
+.navbar-default {
+		background-color: #000 !important;
+		border: none !important;
+}
+.navbar-default .navbar-toggle {
+	background: none !important;	
+	border-radius: 0px !important;
+	border: none;
+	margin-right: 0px !important;
+	width: 100%;
+}
+.navbar-toggle span {
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;	
+  font-weight: 300;
+  letter-spacing: 1px;
+	color: #fff;
+}
+.navbar-default .navbar-toggle:hover {
+	background: none !important;
+}
+.navbar-collapse {
+	border: none;
+	-webkit-box-shadow: none;
+}
+
+/*Desktop Nav*/
+.main-nav {
+  position: fixed;
+  top: 15px;
+  left: 30px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main-nav  ul {
+	padding: 0px;
+}
+
+.main-nav ul li  {
+  margin: .75em .5em .75em 0;
+  font-size: 13px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;	
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.main-nav ul li > a {
+	color: #fff;
+}
+
+.main-nav ul li > a:hover {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.3);
+}
+.main-nav ul li > a:visited {
+	text-decoration: none;
+}
+
+.main-nav ul li > a:focus{
+	text-decoration: none;
+}
+
+/*Social Nav*/
+.social-nav {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.social-nav ul {
+	padding: 0px;
+}
+
+
+.social-nav ul li  {
+	display: inline-block;
+  margin: .75em .5em .75em 0;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;	
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.social-nav ul li > a {
+	color: #fff;
+}
+
+.social-nav ul li > a:hover {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+
+/*CONTENT*/
+.container {
+	max-width: 900px;
+}
+
+.page .container {
+	margin-top: 8vh;
+  margin-bottom: 8vh;
+  justify-content : center;	
+} 
+
+.white {
+	color: #fff;
+}
+
+.bold {
+	font-weight: 400;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh; 
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  
+  /* Align the bootstrap's container vertically */
+  -webkit-box-align : center;
+  -webkit-align-items : center;
+  -moz-box-align : center;
+  -ms-flex-align : center;
+  
+  /* In legacy web browsers such as Firefox 9
+     we need to specify the width of the flex container */
+  width: 100%;
+  -webkit-box-pack : center;
+  -moz-box-pack : center;
+  -ms-flex-pack : center;
+  -webkit-justify-content : center;
+  justify-content : center;
+}
+
+.page-head > .jumbotron {
+	background: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+}
+
+.logo {
+	max-width: 60%;
+}
+
+
+/*Show Page*/
+.show {
+	padding: 10px 10px 20px 10px;
+}
+
+.show > a:hover {
+	color: rgba(255, 255, 255, 0.34);
+}
+
+.show > a {
+	text-transform: uppercase;
+	padding: 10px;
+	text-decoration: none;
+}
+.show .ticket {
+	border: 1px solid #fff;
+	border-radius: 2px;
+}
+
+.show .ticket:hover {
+	border: 1px solid #fff;
+	background: #fff;
+	color: #000;
+}
+
+
+/* Shop Page */
+
+.product-img {
+	display: block;
+  margin: 35px;
+  line-height: 1.42857143;
+  background-color: #fff;
+}
+.product-img:hover{
+	opacity: 0.9;
+}
+
+.product-img > p {
+	color: #000;
+}
+
+.product-img > p:hover {
+	text-decoration: underline;
+}
+
+.product-img > img {
+	width: 100%;
+  padding: 20px;
+}
+
+/* Product Page */
+
+.product-jumbrotron > img {
+  width: 100%;
+  background: #fff;
+  padding: 50px;
+}
+
+.product-details > .title > h1 {
+  margin: 0px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.product-details > .title > p {
+  margin-top: -7px;  
+  font-size: 30px;
+  color: #fff;
+}
+
+.product-details > p {
+  color: #fff;
+}
+.product-details > .collection {
+  line-height: 2em;
+}
+
+.product-details > .collection >a {
+  text-decoration: underline;
+  color: #fff;
+}
+.product-details > .thumbnails {
+  margin-top: 10px;
+}
+.product-details > .thumbnails > img {
+  background-color: #fff;
+  width: 45%;
+  height: 45%;
+  margin: 5px;
+  opacity: 0.4;
+  padding:10px;
+}
+
+.product-details > .thumbnails > img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+.product-details > .cart > a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  max-width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.product-details > .cart > a:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+
+
+/* BLOG */
+.post {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.blog-thumbnail {
+  display: block;
+  margin: 4px;
+  background-color: #fff;
+}
+
+.blog-thumbnail  > img {
+  width: 100%;
+}
+
+.blog-thumbnail  > img:hover {
+  opacity: 0.8;
+}
+
+/*BLOG POST*/
+ .post-details > .title > h1 {
+  color: #fff;
+ }
+
+
+ .post-details > p{
+  color: #fff;
+ }
+
+
+
+
+
+
+
+
+
+
+

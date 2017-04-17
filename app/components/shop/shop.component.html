@@ -1,21 +1,24 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Popular Movies</h3>    
-    </div> 
-    <div class="panel-body">
-        <div *ngIf="products">
-            <div *ngFor="let product of products" class="row">
-                <div class="col-md-8">
-                    <div>
-                        <a routerLink="/shop/product/{{product.sys.id}}"><h4>{{product.fields.title}}</h4></a>
-                        <div *ngIf="assets">
-                            <div *ngFor="let asset of assets| matchImage:product.fields.image.sys.id">
-                                <a routerLink="/shop/product/{{product.sys.id}}"><img src="{{asset.fields.file.url}}"></a>
-                            </div>                       
-                        </div>
-                    </div>                                
-                </div>    
-            </div>
-        </div>   
-    </div>   
-</div>
+<div class="bg-page page">
+  <navbar></navbar>
+  <!-- CONTENT -->
+  <div class="container">
+    <div class="row page-head ">
+      <img class="logo col-xs-6 col-xs-offset-3" src="https://static1.squarespace.com/static/57217a884d088ea322c1caa9/t/5727b6d18a65e2e7780bce09/1487958534277/?format=1500w">  
+      <h1 class="jumbotron col-xs-4 col-xs-offset-4 text-center white bold">SHOP</h1>         
+    </div>
+    <div *ngIf="products">
+      <div *ngFor="let product of products">
+        <div *ngIf="assets">
+          <div *ngFor="let asset of assets | matchImage:product.fields.image.sys.id">
+            <a  class="col-md-3 product-img" routerLink="/shop/product/{{product.sys.id}}">
+              <img class=""  src="{{asset.fields.file.url}}">
+              <hr>
+              <p class="col-md-12 text-center">{{product.fields.title}}</p>
+            </a>  
+          </div> 
+        </div>
+      </div>
+    </div>
+
+  </div>        
+</div>  

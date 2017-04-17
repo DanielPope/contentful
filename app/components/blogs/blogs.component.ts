@@ -2,7 +2,7 @@ import { Component, Pipe, PipeTransform } from '@angular/core';
 import {contentfulService} from '../../services/contentful.service';
 import { Location } from "@angular/common";
 import { DomSanitizer} from '@angular/platform-browser';
-import { ImageMatchPipe } from '../pipes/match-id.pipe';
+import { ImageMatchPipe } from '../../pipes/match-id.pipe';
 
 @Component({
     moduleId: module.id,
@@ -19,6 +19,7 @@ export class BlogsComponent {
         this._contentfulService.getBlogs().subscribe(res => {                
             this.blogs = res.items ;
             this.assets = res.includes.Asset ;
+            console.log(this.blogs);
         });    
     }
     

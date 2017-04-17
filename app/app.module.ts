@@ -8,7 +8,9 @@ import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
 import { ImageMatchPipe } from './pipes/match-id.pipe';
 
 import { AppComponent }  from './app.component';
+import {NavbarComponent} from './components/navbar/navbar.component';
 
+import {HomeComponent} from './components/home/home.component';
 import {BlogsComponent} from './components/blogs/blogs.component';
 import {BlogComponent} from './components/blog/blog.component'
 import {ShopComponent} from './components/shop/shop.component';
@@ -24,10 +26,12 @@ import {ProductComponent} from './components/product/product.component';
   ],
   declarations: [ 
 	  AppComponent, 
+	  HomeComponent,
 	  BlogsComponent, 
 	  BlogComponent,
 	  ShopComponent,
 	  ProductComponent,
+	  NavbarComponent,
 	  ImageMatchPipe,
       EscapeHtmlPipe
   ],
