@@ -1,21 +1,25 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Popular Movies</h3>    
-    </div> 
-    <div class="panel-body">
-        <div *ngIf="blogs">
-            <div *ngFor="let blog of blogs" class="row">
-                <div class="col-md-8">
-                    <div>
-                        <a routerLink="/blogs/post/{{blog.sys.id}}"><h4>{{blog.fields.title}}</h4></a>
-                        <div *ngIf="assets">
-                            <div *ngFor="let asset of assets | matchImage:blog.fields.image.sys.id">
-                               <a routerLink="/blogs/post/{{blog.sys.id}}"><img src="{{asset.fields.file.url}}"></a>
-                            </div>                       
-                        </div>                        
-                    </div>                                
-                </div>    
-            </div>
-        </div>   
-    </div>   
-</div>
+<div class="bg-page page">
+  <navbar></navbar>
+    <!-- CONTENT -->
+    <div class="container">
+      <div class="row page-head">
+          <img class="logo col-xs-6 col-xs-offset-3" src="https://static1.squarespace.com/static/57217a884d088ea322c1caa9/t/5727b6d18a65e2e7780bce09/1487958534277/?format=1500w">    
+          <h1 class="jumbotron col-xs-4 col-xs-offset-4 text-center white bold">BLOG</h1>                 
+      </div>
+
+      <div *ngIf="blogs">
+        <div class="col-md-10 col-md-offset-1 thumbnail" *ngFor="let blog of blogs">
+          <div *ngIf="assets">
+            <div *ngFor="let asset of assets | matchImage:blog.fields.image.sys.id">
+              <a class="blog-thumbnail" routerLink="/blog/post/{{blog.sys.id}}">
+                <img class="col-md-12" src="{{asset.fields.file.url}}">
+                <h2>{{blog.fields.title}}</h2>
+              </a>
+            </div>  
+          </div>    
+        </div>         
+      </div>           
+
+    </div>
+
+</div>  

@@ -6,7 +6,7 @@ import { ImageMatchPipe } from '../../pipes/match-id.pipe';
 
 @Component({
     moduleId: module.id,
-    selector: 'blogs',
+    selector: 'blog',
     templateUrl: 'blogs.component.html'
 })
 export class BlogsComponent { 
@@ -19,7 +19,6 @@ export class BlogsComponent {
         this._contentfulService.getBlogs().subscribe(res => {                
             this.blogs = res.items ;
             this.assets = res.includes.Asset ;
-            console.log(this.blogs);
         });    
     }
     

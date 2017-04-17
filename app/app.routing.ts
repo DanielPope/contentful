@@ -16,11 +16,11 @@ export const routes: Routes = [
         component: HomeComponent
     },
     {
-        path:'blogs',
+        path:'blog',
         component: BlogsComponent
     },	 	   
     {
-        path:'blogs/post/:id',
+        path:'blog/post/:id',
         component: BlogComponent
     },
     {
