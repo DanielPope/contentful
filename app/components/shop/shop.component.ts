@@ -3,7 +3,7 @@ import {contentfulService} from '../../services/contentful.service';
 import { Location } from "@angular/common";
 import { DomSanitizer} from '@angular/platform-browser';
 import { ImageMatchPipe } from '../../pipes/match-id.pipe';
-import {NavbarComponent} from './components/navbar/navbar.component';
+import {NavbarComponent} from '../navbar/navbar.component';
 
 @Component({
     moduleId: module.id,

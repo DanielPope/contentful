@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
 import {contentfulService} from '../../services/contentful.service';
-import {NavbarComponent} from './components/navbar/navbar.component';
+import {NavbarComponent} from '../navbar/navbar.component';
 
 
 @Component({
@@ -12,8 +12,8 @@ import {NavbarComponent} from './components/navbar/navbar.component';
 export class ProductComponent implements OnInit{
     product: Object;
     assets:Array<Object>;
-    isActive: bool = true;
-    notActive: bool = false;
+    isActive: boolean = true;
+    notActive: boolean = false;
     
     constructor(
         private router:ActivatedRoute, 
