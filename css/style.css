@@ -14,7 +14,7 @@ a:focus, a:visited, a:hover {
 
 /* BACKGROUNDS */
 .bg-page {
-  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://static1.squarespace.com/static/57217a884d088ea322c1caa9/t/58501e53725e254d6b0c42a2/1481645657490/DSCF9076-2.png") no-repeat center center scroll;
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/page.png") no-repeat center center scroll;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -28,7 +28,7 @@ a:focus, a:visited, a:hover {
 }
 
 .bg-home {
-  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://static1.squarespace.com/static/57217a884d088ea322c1caa9/t/57277f4f2b8dde53fd13d0aa/1462206288661/IMG_2687+2.jpg") no-repeat center center scroll;
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/home.jpg") no-repeat center center scroll;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
