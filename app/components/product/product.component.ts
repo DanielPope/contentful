@@ -26,7 +26,6 @@ export class ProductComponent implements OnInit{
             let entry = params['id'];
             this._contentfulService.getProduct(entry).subscribe(product => {
                 this.product = product.fields;
-                console.log(this.product);
             });  
             this._contentfulService.getProductThumbnails(entry).subscribe(res=> {
                 this.assets = res.includes.Asset 

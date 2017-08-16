@@ -18,7 +18,6 @@ export class contentfulService{
         this.blog = '14l94LTcTksosm4k6uoUeA'; 
         this.product = '2idzk3SwUoe8mkiwok0Ii2';
         this.show = 'show';
-        console.log('MovieService Initialized...');
     }
 
     getBlogs(){

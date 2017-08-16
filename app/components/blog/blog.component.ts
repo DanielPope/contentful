@@ -21,7 +21,6 @@ export class BlogComponent implements OnInit{
             let entry = params['id'];
             this._contentfulService.getBlog(entry).subscribe(post => {
                 this.post = post.fields;
-                console.log(this.post);
             });
         });
     }

@@ -23,7 +23,7 @@ import {ShowsComponent} from './components/shows/shows.component';
 	  HttpModule, 
 	  JsonpModule, 
 	  FormsModule,
-	  RouterModule.forRoot(routes, { useHash: true })
+	  RouterModule.forRoot(routes, { useHash: false })
   ],
   declarations: [ 
 	  AppComponent, 

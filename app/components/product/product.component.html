@@ -4,9 +4,9 @@
   <div class="container" *ngIf="product">
 
     <div class="row page-head">
-      <img class="logo col-xs-6 col-xs-offset-3" src="https://static1.squarespace.com/static/57217a884d088ea322c1caa9/t/5727b6d18a65e2e7780bce09/1487958534277/?format=1500w">            
+      <img class="logo col-xs-6 col-xs-offset-3" [src]="'img/logo.png'">            
     </div>
-
+    <div *ngIf="!assets"><h1 class="vertical-center" style="color: #fff;">Loading...</h1></div>
     <div class="row" *ngIf="assets">
       <div class="product-jumbrotron col-sm-6">
           <img *ngIf="isActive" src="{{assets[0].fields.file.url}}">
